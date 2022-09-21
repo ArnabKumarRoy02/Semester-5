@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: linear-gradient(black, gray);
+                color: white;
+            }
+            #b1 {
+                align-items: center;
+            }
+
+            #b2 {
+                align-items: center;
+            }
+
+            #b3 {
+                align-items: center;
+            }
+        </style>
+
+        <script>
+            function alert_mess() {
+                alert("Name : Arnab Kumar Roy\nRegistration no. : 202000152");
+            }
+
+            function enlarge() {
+                var x = document.getElementById("img");
+
+                x.width = "550";
+                x.height = "650";
+            }
+
+            function original() {
+                var x = document.getElementById("img");
+                x.width = "350";
+                x.height = "450"
+            }
+
+            function enlarge_text() {
+                var x = document.getElementById("name");
+                x.style.fontSize = "25px";
+            }
+
+            function org_text() {
+                document.getElementById("name").style.fontSize = "15px";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="b1">
+            <button onclick="alert_mess()">Click to know name and reg no</button>
+        </div>
+        <br></br>
+        <div id="b2">
+            <img id="img" src="reeves.jpg" width="350" height="450" onmouseover="enlarge()" onmouseout="original()">
+            <p id = "name" onmouseover="enlarge_text()", onmouseout="org_text()">Keanu Reeves</p>
+        </div>
+
+        <div id="b3">
+            &#169;Official Email-ID : mayank_202000152@smit.smu.edu.in
+        </div>
+    </body>
+</html>

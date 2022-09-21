@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            background-color: black;
+        }
+    </style>
+    <script>
+        function d1() {
+            document.getElementById("name").innerHTML = "Arnab Kumar Roy";
+        }
+        function d2() {
+            document.getElementById("regno").innerHTML = "202000152";
+        }
+        function d3() {
+            document.getElementById("dept").innerHTML = "CSE";
+        }
+        function d4() {
+            document.getElementById("img").innerHTML = '<img src="kobe.jpg" style="height: 300px; width: 300px">';
+        }
+    </script>
+</head>
+<body>
+    <p id="name" onclick="d1()">Name</p>
+    <p id="regno" onclick="d2()">Registration Number</p>
+    <p id="dept" onclick="d3()">Department</p>
+    <p id="img" onclick="d4()">Image</p>
+</body>
+</html>

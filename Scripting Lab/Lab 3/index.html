@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            background-color: black;
+        }
+    </style>
+    <script>
+        function add_number() {
+            var number1 = parseInt(document.getElementById("num1").value);
+            var number2 = parseInt(document.getElementById("num2").value);
+            var result = number1 + number2;
+            alert("The sum is: " + result);
+        }
+    </script>
+</head>
+<body>
+
+    Enter First Number :
+    <input type="text" id="num1"><br>
+    Enter Second Number : 
+    <input type="text" id="num2"><br>
+
+    <input type="button" name="clickbtn" value="Submit" onclick="add_number()">
+    
+</body>
+</html>

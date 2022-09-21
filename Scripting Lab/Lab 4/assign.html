@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            background-color: black;
+            padding: 50px;
+            border: 5px dotted white;
+        }
+
+        #b1 {
+           text-align: center;
+        }
+
+        #b2 {
+            text-align: center;
+        }
+
+        #b3 {
+            text-align: center;
+        }
+
+        #btn {
+            border-radius: 35px;
+            height: 70px;
+            font-family: 'SF Pro Text';
+            font-size: 15px;
+        }
+    </style>
+
+    <script>
+        function alert_text() {
+            alert("Name: Arnab Kumar Roy\nRegistration Number: 202000152");
+        }
+
+        function enlarge() {
+            var x = document.getElementById("img");
+            x.width = "500";
+            x.height = "500";
+        }
+
+        function image() {
+            var x = document.getElementById("img");
+            x.width = "300";
+            x.height = "300";
+        }
+
+        function ontext() {
+            var x = document.getElementById("txt");
+            x.style.fontSize = "30px";
+        }
+
+        function oftext() {
+            var x = document.getElementById("txt");
+            x.style.fontSize = "1.17em";
+        }
+    </script>
+</head>
+<body>
+    <div id="b1">
+        <button id="btn" onclick="alert_text()">Click me to get information</button><br><br>
+    </div>
+
+    <div id="b2">
+        <img src="depp.jpg" height="300px" width="300px" id="img" onmouseover="enlarge()" onmouseout="image()" style="border-radius: 15px;"><br>
+        <h3 id="txt" onmouseover="ontext()" onmouseout="oftext()">Johnny Bhaiya</h3>
+    </div>
+
+    <div id="b3">
+        &#169; arnab_202000152@smit.smu.edu.in
+    </div>
+</body>
+</html>
