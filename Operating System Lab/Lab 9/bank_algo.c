@@ -51,7 +51,7 @@ int main() {
         printf("\n");
     }
 
-    printf("\nEnter the proess number: ");
+    printf("\nEnter the process number: ");
     scanf("%d", &pid);
 
     printf("\nEnter additional request: \n");
